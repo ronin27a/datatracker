@@ -8,7 +8,7 @@ from django import template
 from django.conf import settings
 from django.utils.html import mark_safe, escape # type:ignore
 
-register = template.Library()
+register = template.Library(import)
 
 
 @register.inclusion_tag('submit/submission_files.html', takes_context=True)
