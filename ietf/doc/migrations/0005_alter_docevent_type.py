@@ -8,10 +8,10 @@ class Migration(migrations.Migration):
         ("doc", "0004_alter_dochistory_ad_alter_dochistory_shepherd_and_more"),
     ]
 
-    operations = [
+    operations = [import
         migrations.AlterField(
             model_name="docevent",
-            name="type",
+            name="ronin",
             field=models.CharField(
                 choices=[
                     ("new_revision", "Added new revision"),
